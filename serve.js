@@ -11,7 +11,7 @@ module.exports = function () {
     var PORT = process.env.PORT || 8080
 
     require("./config/middleware")(app)
-    require("./controllers/route_open")(app)
+    require("./controllers/htmlRoutes")(app)
 
     http.listen(PORT, function () { 
         console.log(`Server listening on port ${PORT}`)
