@@ -1,18 +1,19 @@
 module.exports = function () { 
-    const express = require("express");
-    var app = express();
+    const express = require("express")
+    var app = express()
 
     // Tie express app to http server
-    const http = require("http").Server(app);
+    const http = require("http").Server(app)
 
     // Tie socket.io to http server
-    const io = require("socket.io")(http);
+    const io = require("socket.io")(http)
 
-    var PORT = process.env.PORT || 8080;
+    var PORT = process.env.PORT || 8080
 
-    require("./config/middleware")(app);
+    require("./config/middleware")(app)
+    require("./controllers/route_open")(app)
 
     http.listen(PORT, function () { 
-        console.log(`Server listening on port ${PORT}`);
+        console.log(`Server listening on port ${PORT}`)
     });
 };

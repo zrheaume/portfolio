@@ -1,8 +1,7 @@
-const SERVE = require("./serve");
+const SERVE = require("./serve")
 
 try {
-    SERVE();
-}
-catch(err){
+    SERVE()
+} catch(err){
     console.log(err.stack)
 }
