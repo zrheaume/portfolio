@@ -12,6 +12,8 @@ module.exports = function () {
 
     require("./config/middleware")(app)
     require("./controllers/htmlRoutes")(app)
+    require("./controllers/monitor")(io);
+    
 
     http.listen(PORT, function () { 
         console.log(`Server listening on port ${PORT}`)

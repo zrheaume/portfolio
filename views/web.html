@@ -1,0 +1,180 @@
+<link rel='stylesheet' type='text/css' href='/assets/styles/index_web.css'>
+<script type='text/javascript' src='/assets/scripts/style.js'></script>
+<div class='container'>
+    <div class='full-width'>
+        <div class='header-img-container'>
+            <div class='header-img'>
+            </div>
+        </div>
+    </div>
+    <div class='full-width' id='info-bar-parent'>
+        <div class='info-bar'>
+            <span class='info-bar-elem'> Zachary A. Rheaume </span>
+            <div class='info-bar-group'>
+                <span class='info-bar-elem info-bar-fade'> Software </span>
+                <span class='info-bar-elem info-bar-fade'> Design </span>
+                <span class='info-bar-elem info-bar-fade'> Production </span>
+            </div>
+            <span class='info-bar-elem'> Contact </span>
+        </div>
+    </div>
+    <div class='full-width section-header'>
+        <div class='section-title' id='code-section-title'>
+            <h1 class='section-title-text'>CODE</h1>
+        </div>
+        <br>
+        <div class='section-subtitle'>
+            <div class='section-subtitle-section'>
+                <span class='section-subtitle-item'>Clean</span>
+                <span class='section-subtitle-item'>Clear</span>
+                <span class='section-subtitle-item'>Concise</span>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class='ph-1'></div>
+    <div class='half-width'>
+        <div class='panel'>
+            <div class='panel-header'>
+                <h2 class='panel-title'> <b>Divide and Conquer</b></h2>
+                <hr style='float: left;'>
+            </div>
+            <br>
+            <div class='panel-body'>
+                <div class='panel-text'>
+                    <p>
+                        <em>"Divide and Conquer"</em> is an online application, whose development I contributed to as a
+                        part of the jovially named team <em>(ET)=>{ phone("home")}</em>.
+                        The app is a turn-based multiplayer board game in which the player must attempt to take control
+                        of
+                        as much of the board as possible. Divide and Conquer is equal
+                        parts strategy and chance, and the player with the highest score at the end of 15 turns will
+                        emerge
+                        the victor.
+                    </p>
+                    <p>
+                        The app leverages google's ouath API to verify users and associate each game's end result with
+                        the
+                        two individuals who played it. This user data persistance is
+                        what powers the app's leaderboard shown on the home page. The websocket library <u>socket.io</u>,
+                        in conjunction with <u>Redis Cache</u>, power the main functionalities
+                        of the game itself, with Redis being particularly critical in creating and managing the app's
+                        "lobby" where users await a match.
+                    </p>
+                </div>
+                <img src='/assets/media/codeThumbs/divAndConqThumb.png' class='panel-img'>
+            </div>
+            <div class='panel-footer subcontainer'>
+                <div class='sub-half'>
+                    <a class='link heroku-link' href='https://bootcamp-phone-home.herokuapp.com'><i class="fas fa-step-forward"></i>
+                        See the deployed app</a>
+                </div>
+                <div class='sub-half'>
+                    <a class='link repo-link' href='https://github.com/bootcamp-group3/Project-4'><i class="fas fa-code-branch"></i>
+                        View source repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='ph-1'></div>
+
+    <div class='ph-1'></div>
+    <div class='half-width'>
+        <div class='panel'>
+            <div class='panel-header'>
+                <h2 class='panel-title'> <b> TackIt </b></h2>
+                <hr style='float: left;'>
+            </div>
+            <br>
+            <div class='panel-body'>
+                <div class='panel-text'>
+                    <p>
+                        <em>"TackIt"</em> is a web-based chat application that I helped develop for a class project.
+                        The idea behind TackIt was to create a live chat application with devlopment aides (Trello,
+                        GitHub, etc.) integrated for ease of use and improved communication. While we made significant
+                        progress towards achieving that goal, we were limited by our one week development timeframe.
+                        Furthermore, this chat app is almost entirely static, and only relies on Google's firebase
+                        for data persistance.
+                    </p>
+                    <p>
+                        TackIt uses google oauth for user authentication, as well as firebase to power the chat's
+                        persistance / event driven update routine across all users. With a rudimentary "channel" system
+                        and contacts list, it was an accomplishment given the limitiations on time and tech available
+                        for
+                        the assignment.
+                    </p>
+                </div>
+                <img src='/assets/media/codeThumbs/tackItThumb.png' class='panel-img'>
+            </div>
+            <div class='panel-footer subcontainer'>
+                <div class='sub-half'>
+                    <a class='link repo-link' href='https://freemassons.github.io/tackIT/'><i class="fas fa-step-forward"></i>
+                        See the deployed app</a>
+                </div>
+                <div class='sub-half'>
+                    <a class='link repo-link' href='https://github.com/Freemassons/tackIT'><i class="fas fa-code-branch"></i>
+                        View source repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='ph-1'></div>
+
+    <div class='ph-1'></div>
+    <div class='half-width'>
+        <div class='panel'>
+            <div class='panel-header'>
+                <h2 class='panel-title'> <b> Bamazon </b></h2>
+                <hr style='float: left;'>
+            </div>
+            <br>
+            <div class='panel-body'>
+                <div class='panel-text'>
+                    <p>
+                        <em>"Bamazon"</em> is a command-line shopping application written in node. The app, while not
+                        actually connected
+                        to a central server or management system, attempts to emulate what that would <em>look and feel
+                            like.</em> It
+                        stores product and user data in a MySQL database, which it uses to dynamically generate the
+                        on-page content.
+                        The app also leverages the node package <u>inquirer</u> to create an intuitive CLI experience.
+                        Bamazon not only allows
+                        the user to select products from his/her "cart", but also features administrative tools to
+                        update product
+                        inventory levels, adjust pricing, approve new administrator accounts, and more.
+                    </p>
+                </div>
+                <img src='/assets/media/codeThumbs/bamazonThumb.png' class='panel-img'>
+            </div>
+            <div class='panel-footer subcontainer'>
+                <div class='sub-full'>
+                    <a class='link repo-link' href='https://github.com/Freemassons/tackIT'><i class="fas fa-code-branch"></i>
+                        View source repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='ph-1'></div>
+    <br>
+    <br>
+
+    <div class='full-width section-header'>
+        <div class='section-title'>
+            <h1 class='section-title-text'>DESIGN</h1>
+        </div>
+        <br>
+        <div class='section-subtitle'>
+            <div class='section-subtitle-section'>
+                <span class='section-subtitle-item'>Placement</span>
+                <span class='section-subtitle-item'></span>
+                <span class='section-subtitle-item'>Perception</span>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class='half-width'>
+        
+    </div>
+
+
+</div>
