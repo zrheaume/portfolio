@@ -7,7 +7,5 @@ $(function(){
     var socketID = socket.io.engine.id
     socket.emit("user", { socket: socketID, screen: { x: $(window).width(), y: $(window).height() } })
     socket.on("toScreen", (msg) => {
-        // console.log(msg.content)
-        $("#content-target").html(msg.content)
     })
 })

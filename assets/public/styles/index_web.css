@@ -18,6 +18,10 @@ hr{
     grid-column: span 2;
     grid-row: span 1;
 }
+.qt-width{
+    grid-column: span 1;
+    grid-row: span 1;
+}
 .ph-1{
     grid-column: span 1;
     grid-row: span 1;
@@ -154,4 +158,33 @@ hr{
 .heroku-link{
     background: #3c024b;
     color: #ffffff;
+}
+
+/* Info Img */
+.info-vis{
+    height: 500px;
+}
+
+.info-vis-img{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.info-vis-info{
+    height: 100%;
+    font-weight: 400;
+    padding: 15%;
+    background: #0b064ef8;
+    color: white;
+}
+
+#info-vis-ABB{
+    background-image: url(/assets/media/designThumbs/abbThumb.png);
+}
+#info-vis-rabi{
+    background-image: url(assets/media/designThumbs/rlc.jpg);
+}
+#info-vis-ltc{
+    background-image: url(/assets/media/designThumbs/LTC/LTClogo.png);
 }
